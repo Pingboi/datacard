@@ -1,0 +1,16 @@
+Package: datacard
+Title: Describe the Structure of a Dataset Without Exposing the Data
+Version: 0.1.0
+Authors@R: person("Pingboi", email = "94149299+Pingboi@users.noreply.github.com", role = c("aut", "cre"))
+Description: Writes a Markdown file that describes the columns, types,
+    categories and formats of a data frame under fixed disclosure rules. The
+    file can be shared, for example with an AI assistant, so that others can
+    help with code and research without seeing the data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Depends: R (>= 4.1.0)
+Imports: dplyr, stats, stringr, utils
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.0
