@@ -13,7 +13,7 @@ Describe the structure of a dataset without exposing the data.
 ## Install
 
 ```r
-# install.packages("pak")
+## install.packages("pak")
 pak::pak("Pingboi/datacard")
 ```
 
@@ -31,12 +31,12 @@ It needs `dplyr` and `stringr`.
 library(datacard)
 
 data_card(
-  bills,                                   # a data frame you have already loaded
-  file = "data-card.md",
-  descriptions = c(amount = "dollars, GST inclusive"),
-  hide = "retailer",                       # name and type only
-  drop = "internal_notes",                 # left out completely
-  keys = c("customer", "quarter")          # are these unique per row?
+    bills,                                   ## a data frame you have already loaded
+    file = "data-card.md",
+    descriptions = c(amount = "dollars, GST inclusive"),
+    hide = "retailer",                       ## name and type only
+    drop = "internal_notes",                 ## left out completely
+    keys = c("customer", "quarter")          ## are these unique per row?
 )
 ```
 

@@ -55,9 +55,9 @@ Read the file before you share it. Column names are always shown unless you
 }
 \examples{
 bills <- data.frame(
-  customer = sprintf("C\%05d", 1:200),
-  tariff = rep(c("flat", "time-of-use"), c(150, 50)),
-  amount = round(runif(200, 50, 900), 2)
+    customer = sprintf("C\%05d", 1:200),
+    tariff = rep(c("flat", "time-of-use"), c(150, 50)),
+    amount = round(runif(200, 50, 900), 2)
 )
 data_card(bills, file = tempfile(fileext = ".md"), keys = "customer")
 }
